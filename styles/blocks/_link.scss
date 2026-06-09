@@ -1,0 +1,27 @@
+@use '../helpers'as *;
+
+.link {
+  &--new {
+    display: inline-flex;
+    align-items: center;
+
+    &::after {
+      content: 'New';
+      color: var(--color-light);
+      padding: fluid(4, 2) fluid(14, 10);
+      margin-left: rem(6);
+      font-size: rem(16);
+      text-align: center;
+      border: rem(1) solid transparent;
+      border-radius: rem(6);
+      background: var(--gradient);
+    }
+
+    @include laptop {
+      &::after {
+        font-size: rem(14);
+        border-radius: rem(4);
+      }
+    }
+  }
+}
