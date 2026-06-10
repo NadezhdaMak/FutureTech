@@ -5,18 +5,23 @@
 @use 'globals';
 
 /* Blocks */
+@use 'blocks/advantage-card';
 @use 'blocks/burger-button';
 @use 'blocks/button';
 @use 'blocks/icon';
 @use 'blocks/link';
 @use 'blocks/logo';
+@use 'blocks/metrics';
+@use 'blocks/resources-preview';
 @use 'blocks/soc1als';
+@use 'blocks/team';
 
 /* Sections */
 @use 'sections/header';
+@use 'sections/hero';
 
 @use 'sections/footer';
 
-header{
+header, footer{
   display: none;
 }
